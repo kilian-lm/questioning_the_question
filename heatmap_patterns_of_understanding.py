@@ -1,6 +1,45 @@
-import numpy as np
-import matplotlib.pyplot as plt
 import imageio
+import matplotlib.pyplot as plt
+import numpy as np
+from nltk.corpus import reuters
+from collections import Counter
+from sklearn.manifold import TSNE
+from sklearn.feature_extraction.text import TfidfVectorizer
+from matplotlib import cm
+
+
+import ssl
+
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
+    pass
+else:
+    ssl._create_default_https_context = _create_unverified_https_context
+
+import nltk
+
+nltk.download('reuters')
+
+# Get the 100 most common words
+word_counts = Counter(reuters.words())
+common_words = word_counts.most_common(100)
+
+# Create a TF-IDF vectorizer and fit the corpus
+vectorizer = TfidfVectorizer(vocabulary=[word for word, _ in common_words])
+X = vectorizer.fit_transform(reuters.raw().split('\n'))
+X
+# Reduce the dimensionality of the TF-IDF matrix to 2D using t-SNE
+X_2d = TSNE(n_components=2).fit_transform(X.toarray().T)
+
+# Get the frequencies of the common words
+frequencies = np.array([count for _, count in common_words])
+
+# Normalize the frequencies for better visualization
+frequencies = (frequencies - frequencies.min()) / (frequencies.max() - frequencies.min())
+
+import matplotlib.pyplot as plt
+import numpy as np
 from nltk.corpus import reuters
 from collections import Counter
 from sklearn.manifold import TSNE
@@ -35,13 +74,12 @@ X_2d = TSNE(n_components=2).fit_transform(X.toarray().T)
 # Get the frequencies of the common words
 frequencies = np.array([count for _, count in common_words])
 
-# Normalize the frequencies for better visualization
-frequencies = (frequencies - frequencies.min()) / (frequencies.max() - frequencies.min())
+
+
+# todo v2
 
 
 
-# Get the frequencies and words of the common words
-frequencies = np.array([count for _, count in common_words])
 words = np.array([word for word, _ in common_words])
 
 # Normalize the frequencies for better visualization
@@ -94,5 +132,8 @@ def draw_frame(rotation):
 # Generate a list of images
 images = [draw_frame(rotation) for rotation in range(0, 360, 2)]
 
-# Create a gif
-imageio.mimsave('young_man_perception.gif', images)
+
+# Call the draw_frame function to create the 3D plot
+draw_frame(30)  # You can change 30 to any value of your choice
+# Save the figure
+plt.savefig("/Users/kilian.lehn/Documents/GitHub/questioning_the_question/3d_plot.png")
