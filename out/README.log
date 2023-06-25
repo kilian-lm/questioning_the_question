@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.21)  25 JUN 2023 13:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.21)  25 JUN 2023 14:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -184,7 +184,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Overfull \hbox (5.55128pt too wide) in paragraph at lines 16--16
+Overfull \hbox (5.55128pt too wide) in paragraph at lines 18--18
 []\OT1/cmr/bx/n/14.4 Perception, Un-der-stand-ing, and Their Dy-nam-
  []
 
@@ -194,42 +194,45 @@ Overfull \hbox (5.55128pt too wide) in paragraph at lines 16--16
 [2
 
 ]
-<combined_plot.png, id=20, 462.528pt x 346.896pt>
+<combined_plot.png, id=20, 1084.05pt x 361.35pt>
 File: combined_plot.png Graphic file (type png)
 <use combined_plot.png>
-Package pdftex.def Info: combined_plot.png  used on input line 58.
-(pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
- [3 <./combined_plot.png>] [4]
-(/Users/kilian.lehn/Documents/GitHub/questioning_the_question/out/README.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+Package pdftex.def Info: combined_plot.png  used on input line 63.
+(pdftex.def)             Requested size: 241.49895pt x 80.49522pt.
+ [3 <./combined_plot.png>]
+<3d_plot.png, id=26, 722.7pt x 361.35pt>
+File: 3d_plot.png Graphic file (type png)
+<use 3d_plot.png>
+Package pdftex.def Info: 3d_plot.png  used on input line 94.
+(pdftex.def)             Requested size: 241.49895pt x 120.75111pt.
+ [4 <./3d_plot.png>]
+(/Users/kilian.lehn/Documents/GitHub/questioning_the_question/out/README.aux) )
+ 
 Here is how much of TeX's memory you used:
- 2586 strings out of 478268
- 42887 string characters out of 5846346
- 337304 words of memory out of 5000000
- 20777 multiletter control sequences out of 15000+600000
+ 2593 strings out of 478268
+ 42990 string characters out of 5846346
+ 337312 words of memory out of 5000000
+ 20783 multiletter control sequences out of 15000+600000
  475183 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,67p,674b,235s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
-sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
-al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
-texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
-live/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+ 60i,6n,67p,678b,235s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
+/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
+/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
 Output written on /Users/kilian.lehn/Documents/GitHub/questioning_the_question/
-out/README.pdf (4 pages, 177021 bytes).
+out/README.pdf (4 pages, 267715 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 78 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
